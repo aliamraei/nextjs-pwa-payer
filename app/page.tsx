@@ -5,7 +5,9 @@ import HlsPlayer from "@/components/VideoJSPlayer";
 
 export default function Home() {
   const [videoUrl, setVideoUrl] = useState<string>("");
-  const [submittedUrl, setSubmittedUrl] = useState<string>("");
+  const [submittedUrl, setSubmittedUrl] = useState<string>(
+    "https://ads.cdn.asset.aparat.com/aparat-ads/0d72af31960248643f4eaf4964b8fe8a69560423-720p.mp4",
+  );
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,11 +39,7 @@ export default function Home() {
         </div>
       </form>
 
-      <HlsPlayer
-        src={
-          "https://ads.cdn.asset.aparat.com/aparat-ads/0d72af31960248643f4eaf4964b8fe8a69560423-720p.mp4"
-        }
-      />
+      <HlsPlayer src={submittedUrl} />
     </main>
   );
 }
