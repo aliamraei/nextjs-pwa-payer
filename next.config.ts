@@ -11,6 +11,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  turbopack: {},
 };
 
+// @ts-ignore
 export default withPWA(nextConfig);

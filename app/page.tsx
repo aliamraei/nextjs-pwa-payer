@@ -6,7 +6,7 @@ import HlsPlayer from "@/components/VideoJSPlayer";
 export default function Home() {
   const [videoUrl, setVideoUrl] = useState<string>("");
   const [submittedUrl, setSubmittedUrl] = useState<string>(
-    "https://ads.cdn.asset.aparat.com/aparat-ads/0d72af31960248643f4eaf4964b8fe8a69560423-720p.mp4",
+    "https://panel-cdn.yektanet.com/media/converted-videos/hls-explore/2--6a3362f8-35c6-4dc4-adc6-95c8cd96becb_hls_360.m3u8",
   );
 
   const handleSubmit = (e: React.FormEvent) => {
